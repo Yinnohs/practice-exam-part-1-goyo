@@ -9,10 +9,8 @@ public class Main {
 
         while(!stopLooping){
             showMenu();
-            String userInput = scanner.nextLine();
-            userInput.toUpperCase();
+            String userInput = scanner.nextLine().toUpperCase();
 
-            System.out.println(userInput.equals("Q"));
 
             if (userInput.equals("Q")){
                 stopLooping = true;
@@ -20,11 +18,11 @@ public class Main {
                 Float number = Float.parseFloat(userInput);
                 queue.enQueue(number);
             }
-
         }
 
         while (queue.getTop() != 0){
-            total += queue.deQueue();
+            Float numberToSum = queue.deQueue();
+            total =  total + numberToSum;
         }
 
         System.out.println("the total amount is: " + total);

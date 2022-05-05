@@ -18,6 +18,8 @@ public class CustomQueue{
     }
 
     public  Float deQueue (){
-        return this.values.remove(0);
+        Float number = this.values.remove(0);
+        top --;
+        return  number;
     }
 }
