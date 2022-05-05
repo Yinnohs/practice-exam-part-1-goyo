@@ -1,16 +1,16 @@
 import java.util.ArrayList;
 
-public class CustomQueue<T>{
-    private ArrayList<T> values;
+public class CustomQueue{
+    private ArrayList<Float> values;
 
     public CustomQueue(){
 
     }
-    public void enQueue (T element){
+    public void enQueue (Float element){
         values.add(element);
     }
 
-    public  T deQueue (){
+    public  Float deQueue (){
         return this.values.remove(0);
     }
 }
