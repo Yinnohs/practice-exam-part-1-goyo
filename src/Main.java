@@ -1,4 +1,7 @@
-public class Main {
+import java.util.Scanner;
 
-    queue
+public class Main {
+    Scanner scanner = new Scanner(System.in);
+    CustomQueue queue = new CustomQueue();
+    boolean stopLooping =  false;
 }
